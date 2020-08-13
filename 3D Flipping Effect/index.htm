@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Flipping Effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="\customized - odh.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/b54167b45e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Omega Developrs</h2>
+        </header>
+        <script>
+		var currentPage='logIn';
+            function flip()
+            {
+			if(currentPage==='logIn'){
+                
+				document.getElementById("back").style.zIndex='0';
+                
+				document.getElementById("flipper").style.transform= "rotateY(180deg)";
+				
+				document.getElementById("front").style.zIndex='10';
+
+				currentPage='signUp';
+		
+            }
+			else{
+				document.getElementById("front").style.zIndex='0';
+
+				document.getElementById("flipper").style.transform= "rotateY(0deg)";
+
+				document.getElementById("back").style.zIndex='10';
+
+				currentPage='logIn';
+	
+			}
+			}
+
+        </script>
+        <div id="flipper">
+            <div id="front">
+                <h2>Get Started.</h2>
+                <br>
+                <form action="">
+                    <div class="field">
+                        <i class="fa fa-envelope" ></i>
+                        <input type="email" name="email"  placeholder="Email Address">
+                    </div>
+                    <div class="field">
+                        <i class="fa fa-user" ></i>
+                        <input type="text" name="username"  placeholder="Username">
+                    </div>
+                    <div class="field">
+                        <i class="fa fa-lock" ></i>
+                        <input type="password" name="password"  placeholder="Create Password">
+                    </div>
+                    <div class="field">
+                        <i class="fa fa-lock" ></i>
+                        <input type="password" name="r-password"  placeholder="Confirm Password">
+                    </div>
+                    <div style="height: 15px;">
+                        <!--empty-->
+                    </div>
+                    <button type="submit" class="submit">Sign Up</button>
+                    <div class="switch">
+                        Already a User?<br> <span id="control" onclick="flip()">Log-in here.</span>
+                    </div>
+                </form>
+                
+            </div>
+            <div id="back">
+                <h2>Welcome Back.</h2>
+                <br>
+                <form action="">
+                    <div class="empty">
+                        <!--Empty-->
+                    </div>
+                    <div class="field">
+                        <i class="fa fa-user" ></i>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="field">
+                        <i class="fa fa-lock" ></i>
+                        <input type="password" name="password"  placeholder="Password">
+                    </div>
+                    <a class="fp" href="#">Forgot Password?</a>
+                    <div style="height: 20px;">
+                        <!--Empty-->
+                    </div>
+
+                    <button type="submit" class='submit'>Log In</button>
+                    
+                    <div class="switch">
+                        New User? <br><span id="control" onclick="flip()">Sign Up here.</span>
+                    </div>
+                                        
+                </form>
+            </div>
+           
+        </div>
+
+        <div class="or">
+            <span class="line"></span>
+            <span>Or</span>
+            <span class="line"></span>
+        </div>
+
+        <div class="const">
+           <div class="format">
+            <p class="O-auth">
+                Continue with
+                 <i class="fab fa-facebook"></i>
+                 <i class="fab fa-google-plus-g"></i>
+                 <i class="fab fa-twitter"></i>
+            </p>
+
+
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>
