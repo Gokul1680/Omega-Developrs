@@ -37,7 +37,7 @@ function func(){
     }
     else if(unitIn==unitOut)
     {
-        result="Input and Output can't be same!"
+        result="Input and Output units can't be same!"
     }
     else
     {
@@ -46,4 +46,11 @@ function func(){
 
     document.getElementById("result").innerHTML= result;
    
+}
+function reset()
+{
+    document.getElementById("user-value").value="";
+    document.getElementById("result").innerHTML="";
+    document.getElementById("input-unit").value="Celsius";
+    document.getElementById("output-unit").value="Fahrenheit";
 }
