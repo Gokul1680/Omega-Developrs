@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@649&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+
+body{
+    color: #e9ecef;
+    background: #212529;
+}
+
+header{
+    background: #212529;
+}
+
+header h1{
+    font-family: 'Halant' , serif;
+    width: fit-content;
+    margin: 20 200;
+    color: #edf6f9;
+}
+
+.head-container{
+    background: #ffffff;
+    width: 100%;
+}
+h2{
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    width: fit-content;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: black;
+}
+.none{
+    display: none;
+}
+
+.container{
+    background: #ffffff;
+    color: black;
+    width: 40em;
+    margin: 50 auto;
+    padding: 2em;
+    border-radius: 15px;
+}
+#split{
+    display: flex;
+    padding: 10px;
+}
+span.split{
+    display: inline-flex;
+    margin: 10 auto;
+    font-family: 'Comfortaa', cursive;
+
+    font-size: 15px;
+    
+    padding: 1em;
+
+}
+#select,
+#input{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.select{
+    width: 18em;
+    height: 3em;
+    padding: 0.2em;
+    background: #dee2e6;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: monospace;
+
+}
+input{
+    width: 18em;
+    height: 3em;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    background: #dee2e6;
+    text-align: right;
+    font-size: 16px;
+    font-family: monospace;
+
+}
+#result{
+    width: 16em;
+    height: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    background: #dee2e6;
+    text-align: right;
+    font-size: 16px;
+    font-family: monospace;
+    margin: 0;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30 auto;
+}
+#btn,
+#clear-btn{
+    
+    width: 12em;
+    padding: 15 20;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #03fc7f, #6af7b1, #03fc7f);
+    border: none;
+    outline: none;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+#clear-btn{
+    background: #cbf3f0;
+}
